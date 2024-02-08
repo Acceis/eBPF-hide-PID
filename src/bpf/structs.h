@@ -24,7 +24,6 @@ struct dirents_data_t {
    long buff_size;
    u16 d_reclen;
    u16 d_reclen_prev;
-   u16 d_reclen_new;
    bool patch_succeded;
 };
 
