@@ -38,6 +38,11 @@ enum {
 	true = 1,
 };
 
+typedef long long unsigned int __u64;
+typedef unsigned int __u32;
+typedef short unsigned int __u16;
+typedef unsigned char __u8;
+
 typedef __u64 u64;
 typedef __u32 u32;
 typedef __u16 u16;
