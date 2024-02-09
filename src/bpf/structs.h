@@ -1,4 +1,3 @@
-
 #define MAX_NAME_LEN 100
 
 // I believe no directory have more 10k entries

