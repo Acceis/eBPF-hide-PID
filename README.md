@@ -2,7 +2,7 @@
 
 This project aims to demonstrate a way to hide a _process identifier_ (PID) to a user abusing of a system call.
 
-It took his inspiration from the work of Pathtofile about [bad BPF programs behaviour](https://github.com/pathtofile/bad-bpf).
+It is inspired by the work of Pathtofile about [bad BPF programs behaviour](https://github.com/pathtofile/bad-bpf).
 
 If you're looking for a deep dive into this project, you can find the related articles on the [ACCEIS blog](https://www.acceis.fr/ressources/).
 
