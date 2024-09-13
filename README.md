@@ -4,7 +4,8 @@ This project aims to demonstrate a way to hide a _process identifier_ (PID) to a
 
 It is inspired by the work of Pathtofile about [bad BPF programs behaviour](https://github.com/pathtofile/bad-bpf).
 
-If you're looking for a deep dive into this project, you can find the related articles on the [ACCEIS blog](https://www.acceis.fr/ressources/).
+If you're looking for a deep dive into this project, you can find the two related articles on the [ACCEIS blog](https://www.acceis.fr/categorie/articles-techniques/). \
+You can find the [first article](https://www.acceis.fr/ebpf-program-creation-in-practice-pid-concealment-part-1/) and [the second](https://www.acceis.fr/ebpf-in-practice-pid-concealment-part-2/).
 
 ## Dependencies
 
